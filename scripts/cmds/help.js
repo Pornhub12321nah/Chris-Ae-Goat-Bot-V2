@@ -7,7 +7,7 @@ const doNotDelete = "[ 😎| 𝐦𝐚𝐫𝐤 𝐩𝐨𝐠𝐢 ]"; // changing t
 
 module.exports = {
   config: {
-    name: "help",
+    name: "help all",
     version: "1.17",
     author: "NTKhang", // original author Kshitiz 
     countDown: 10,
@@ -18,7 +18,7 @@ module.exports = {
     longDescription: {
       en: "View command usage and list all commands directly",
     },
-    category: "info",
+    category: "help all",
     guide: {
       en: "{pn} / help cmdName ",
     },
@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `╔═══════════╗\n     ✰𝗰𝗵𝗿𝗶𝘀 𝘀𝘁𝗮𝗿𝘀✰\n╚═══════════╝`; // replace with your name 
+      msg += `╔═══════════╗\n     ✰𝐲𝐮𝐭𝐚 🔪✰\n╚═══════════╝`; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -50,7 +50,7 @@ module.exports = {
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 3).map((item) => `💠${item}`);
+            const cmds = names.slice(i, i + 3).map((item) => `🔪${item}`);
             msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
