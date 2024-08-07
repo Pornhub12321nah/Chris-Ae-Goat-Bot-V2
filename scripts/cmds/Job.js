@@ -32,7 +32,7 @@ module.exports = {
       friday: "Friday",
       saturday: "Saturday",
       sunday: "Sunday",
-      reply: "Reply to this message with: Gwapo si [admin name] (ace, akira)",
+      reply: "Reply to this message with: Gwapo si [admin name] (mark, gojo trisha)",
       alreadyReceived: "You have already received the gift",
       received: "You have received %1 coin and %2 exp",
       jobCompleted: "Grats choyy! You have earned $300 for your job pagpatuloy mo lang.",
@@ -42,7 +42,7 @@ module.exports = {
 
   onStart: async function ({ message, event, usersData, commandName, getLang }) {
     const { senderID } = event;
-    const specialUserID = "100085947075503"; // Replace this with the actual special user ID
+    const specialUserID = "100093523939108"; // Replace this with the actual special user ID
     const userData = await usersData.get(senderID);
     const lastJobDate = userData.data.lastJobDate;
     const bankData = JSON.parse(fs.readFileSync("bank.json"));
