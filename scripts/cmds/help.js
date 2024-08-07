@@ -7,7 +7,7 @@ const doNotDelete = "[ 😎| 𝐦𝐚𝐫𝐤 𝐩𝐨𝐠𝐢 ]"; // changing t
 
 module.exports = {
   config: {
-    name: "help all",
+    name: "help",
     version: "1.17",
     author: "NTKhang", // original author Kshitiz 
     countDown: 10,
@@ -18,7 +18,7 @@ module.exports = {
     longDescription: {
       en: "View command usage and list all commands directly",
     },
-    category: "info2",
+    category: "info",
     guide: {
       en: "{pn} / help cmdName ",
     },
